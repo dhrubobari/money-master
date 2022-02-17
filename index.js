@@ -34,3 +34,17 @@ expenseTotal.innerText = rentAmount + foodExpense + insuranceExpense;
 balanceTotal.innerText = totalIncome - totalExpense - totalBalance;
 });
 
+// saving calculations
+document.getElementById('save-button').addEventListener('click', function(){
+    const saveInputField = document.getElementById('save-input');
+    const saveInputText = saveInputField.value;
+    const savingTotal = parseFloat(saveInputText);
+
+    //
+    const totalSavings = document.getElementById('savings-total');
+    const totalSavingsText = totalSavings.innerText;
+    const updateSavingTotal = parseFloat(totalSavingsText);
+    totalSavings.innerText = savingTotal % updateSavingTotal;
+});
+
+// document.getElementById('save-button').addEventListener()
