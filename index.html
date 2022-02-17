@@ -5,27 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cost Effective</title>
-    <!-- tailwind link -->
+    <!-- tailwind script -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- header start -->
     <header>
-    <h1 class="text-5xl text-center mt-11 font-serif">Cost Effective</h1>
+    <h1 class="text-5xl text-center mt-11"style="font-family: 'Prompt', sans-serif; color: #32cd32;"><span style="color: #7e27ed;">Cost</span> Effective</h1>
     </header>
     <!-- main section -->
-    <main class="grid grid-cols-2 gap-4">
+    <main class="grid grid-cols-2 gap-5">
     <div class="mt-12 ml-7">
         <img src="image/money-calculation.jpg" alt="" srcset="">
     </div>
-    <section class="bg-slate-100 mt-12 mr-7 h-auto">
+    <section class="bg-slate-100 mt-12 mr-7 h-full">
         <h3 class="font-semibold text-1xl text-center mt-8">Income</h3>
         <div class="flex justify-center mt-4 mr-5 gap-2">
         <div>
-        <h3>Income: </h3>
+        <h3>Salary: </h3>
         </div>  
         <div>  
-        <input class="bg-gray-300 p-1" type="text" name="" id="">
+        <input class="bg-gray-300 p-1" type="text" name="" id="income-input">
         </div>
         </div>
     <div>
@@ -35,7 +39,7 @@
         <h3>Rent: </h3>
         </div>  
         <div>  
-        <input class="bg-gray-300 p-1" type="text" name="" id="">
+        <input class="bg-gray-300 p-1" type="text" name="" id="rent-input">
         </div>
         </div>
         <div class="flex justify-center mt-3 mr-1 gap-2">
@@ -43,7 +47,7 @@
             <h3>Food: </h3>
             </div>  
             <div>  
-            <input class="bg-gray-300 p-1" type="text" name="" id="">
+            <input class="bg-gray-300 p-1" type="text" name="" id="food-input">
             </div>
         </div>
         <div class="flex justify-center mt-3 mr-9 gap-2">
@@ -51,20 +55,23 @@
             <h3>Insurance: </h3>
             </div>  
             <div>  
-            <input class="bg-gray-300 p-1" type="text" name="" id="">
+            <input class="bg-gray-300 p-1" type="text" name="" id="insurance-input">
             </div>
         </div>
     </div>
         <div class="flex justify-center mt-6">
+            <!-- calculate button -->
         <button id="calculate-button" class="text-white bg-blue-400 p-1 px-6 rounded font-normal">Calculate</button>
         </div>
         <div>
             <h3 class="font-semibold text-center text-lg mt-5">Total Expenses: <span id="expense-total">0</span></h3>
         </div>
         <div>
-            <h3 class="font-semibold text-center text-lg mt-2">Balance: <span id="expense-total">0</span></h3>
+            <h3 class="font-semibold text-center text-lg mt-2">Balance: <span id="balance-total">0</span></h3>
         </div>
     </section>
 </main>
+<!-- Javascript link -->
+<script src="index.js"></script>
 </body>
 </html>
